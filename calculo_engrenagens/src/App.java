@@ -1,7 +1,4 @@
-import menus.MenuAnguloCoroa;
-import menus.MenuEngrenagemHelicoidal;
-import menus.MenuEngrenagemReta;
-import menus.MenuEntrecentro;
+import menus.*;
 import utilitario.InputUtils;
 
 import java.util.Scanner;
@@ -29,6 +26,7 @@ public class App {
                             2. Engrenagem Helicoidal
                             3. Ângulo Coroa
                             4. Entrecentro
+                            5. Número Primo
                             Digite o número correspondente à sua escolha ou 's' para sair:"""
             );
 
@@ -46,6 +44,9 @@ public class App {
                     break;
                 case "4":
                     MenuEntrecentro.exibirMenu(scanner);
+                    break;
+                case "5":
+                    MenuNumeroPrimo.exibirMenu(scanner);
                     break;
                 case "s":
                 case "S":
